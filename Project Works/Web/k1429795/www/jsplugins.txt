@@ -1,0 +1,40 @@
+//Displaying the time of the day//
+
+function show_time() {
+document.write("<center><font size=+1>");
+ var day = new Date();
+ var hr = day.getHours();
+ if (hr <= 11) {
+ document.write("Good morning, User!");
+}
+ 
+ if (hr >= 12) || (hr <= 17 ){
+ document.write("Good afternoon, User!");
+}
+ 
+ if ((hr >= 18) || (hr <= 23) {
+ document.write("Good evening, User!");
+}
+  document.write("</font></center>");
+}
+
+
+//Linking to google search//
+
+function to_search() {
+window.open('http://www.google.com','toolbar=no,location=no, directories=no, status=yes, menubar=no, resizable=yes, copyhistory=no, scrollbars=no, width=300, height=300');
+}
+ 
+//validation of name and password//
+
+function to_validate() {
+var x = document.forms["myForm"]["email"].value;
+    if (x == null || x == "") {
+        alert("User ID is required!");
+        return false;
+}
+
+// Background color of a document //
+setTimeout("document.bgColor='white'", 1000) setTimeout("document.bgColor='lightpink'", 1500) setTimeout("document.bgColor = 'pink'", 2000) setTimeout("document.bgColor = 'deeppink'", 2500) setTimeout("document.bgColor = 'red'", 3000) setTimeout("document.bgColor = 'tomato'", 3500) setTimeout("document.bgColor = 'darkred'", 4000)
+
+ 
